@@ -11,7 +11,8 @@
 - 已准备：README.md、官方原文 CONTEST_DECLARATION.md、MCP_INTEGRATION.md、环境变量占位符配置、完整 Skill、可运行脚本及离线测试。
 - 已完成：Token 本地配置；真实 MCP 查询、核价和本地诊断验证；完整源码已发布到个人公开仓库 https://github.com/yunpeng2049/mcpatch ，远端 19 个文件已逐项核对。
 - 已提交：北京时间 2026-10-25 09:27:43，通过 `yunpeng2049` 账号提交 [报名 Issue #1337](https://github.com/M-China/mcd-developer-innovation-challenge/issues/1337)。
-- 待完成：检查系统成功回复。当前只能确认申请已提交；Issue 创建本身不能替代系统审核回复。
+- 报名成功：北京时间 2026-10-25 09:59:09，官方账号 `M-China-Official` 回复「您的作品已成功参赛，您可以通过官方项目的排行榜.md查看排名」。[查看官方确认回执](https://github.com/M-China/mcd-developer-innovation-challenge/issues/1337#issuecomment-6392210436)。
+- 排名快照：2026-10-25 15:12 核验时仓库为 0 Star，尚未出现在 [15:00:59 更新的官方排行榜](https://github.com/M-China/mcd-developer-innovation-challenge/blob/main/RANKING.md)中。参赛成功与排行榜名次是两个状态，当前没有已确认名次。
 
 ## 官方要求
 
@@ -34,7 +35,7 @@ GitHub 账号为 `yunpeng2049`，公开仓库为 `mcpatch`，创建于 2026-10-2
 
 字段名称和内容放在同一行，项目 URL 使用纯文本；不得把整个正文挤成一行。提交前再次检查官方模板有无更新。
 
-发布后检查系统回复。失败时按原因修复后重新提交，避免无意义重复。Star>0 才能进入排名计算，按公开真实 Star 排名；不进行刷星或虚假互动。
+系统已回复参赛成功，无需重复提交。官方按公开真实 Star 排名；Star 数为 0 的项目不进入排行榜，原则上前 100 个项目及第 100 个项目的并列项目入榜，不进行刷星或虚假互动。
 
 ## WorkBuddy
 
