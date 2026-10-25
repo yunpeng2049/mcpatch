@@ -13,7 +13,7 @@
 | 真实 MCP 连接、菜单和核价 | 已完成 6 种业务工具调用及 4 个完整购物车核价，详见 LIVE_VERIFICATION.md |
 | 真实结果诊断 | 保留全部条件需增加 330 分，或仅放弃共享薯条；两种最小修改均验证通过 |
 | 公开仓库 | https://github.com/yunpeng2049/mcpatch |
-| 报名 Issue、系统回执 | 见 REGISTRATION.md，以官方回复为准 |
+| 报名 Issue、系统回执 | [#1337](https://github.com/M-China/mcd-developer-innovation-challenge/issues/1337) 已提交，系统回执待核验；见 REGISTRATION.md |
 
 复现：
 

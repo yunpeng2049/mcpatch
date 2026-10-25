@@ -10,8 +10,8 @@
 
 - 已准备：README.md、官方原文 CONTEST_DECLARATION.md、MCP_INTEGRATION.md、环境变量占位符配置、完整 Skill、可运行脚本及离线测试。
 - 已完成：Token 本地配置；真实 MCP 查询、核价和本地诊断验证；完整源码已发布到个人公开仓库 https://github.com/yunpeng2049/mcpatch ，远端 19 个文件已逐项核对。
-- 待完成：正式提交报名 Issue；检查系统成功回复。
-- 尚未报名成功。仓库创建或 Issue 创建本身不能替代系统审核回复。
+- 已提交：北京时间 2026-10-25 09:27:43，通过 `yunpeng2049` 账号提交 [报名 Issue #1337](https://github.com/M-China/mcd-developer-innovation-challenge/issues/1337)。
+- 待完成：检查系统成功回复。当前只能确认申请已提交；Issue 创建本身不能替代系统审核回复。
 
 ## 官方要求
 
@@ -19,11 +19,11 @@
 
 GitHub 账号为 `yunpeng2049`，公开仓库为 `mcpatch`，创建于 2026-10-24。实测记录见 LIVE_VERIFICATION.md。
 
-## 报名 Issue 草稿
+## 已提交的报名 Issue
 
 标题：`【参赛申请】McPatch · 麦麦需求编译器`
 
-以下为报名正文，正式提交前核对公开仓库文件齐全：
+以下为已提交的报名正文：
 
 ```text
 【参赛申请】

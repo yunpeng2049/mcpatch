@@ -6,6 +6,8 @@
 
 > 当前状态：2026-10-25 已完成真实 MCP 工具发现、选店、菜单、套餐详情、门店券查询及四个完整购物车核价，并将真实结果送入诊断器。18 项自动化测试通过。[查看脱敏实测记录](docs/LIVE_VERIFICATION.md)。非麦当劳官方产品。
 
+参赛申请已提交：[官方报名 Issue #1337](https://github.com/M-China/mcd-developer-innovation-challenge/issues/1337)。报名结果以官方系统回复为准，详见[报名记录](docs/REGISTRATION.md)。
+
 ## 一个有用的区别
 
 普通推荐容易在超预算时悄悄删掉某个人的饮料。McPatch 保留每个人的条件，回答三个问题：
