@@ -1,0 +1,205 @@
+{
+  "schema_version": 1,
+  "mode": "demo",
+  "demo_now": "2026-10-24T20:01:00+08:00",
+  "context": {
+    "store_id": "DEMO-STORE",
+    "dining_mode": "takeaway",
+    "currency": "CNY"
+  },
+  "budget_cents": 4000,
+  "constraints": [
+    {
+      "id": "p1-main",
+      "label": "甲有一份主食",
+      "relaxable": false
+    },
+    {
+      "id": "p2-main",
+      "label": "乙有一份主食",
+      "relaxable": false
+    },
+    {
+      "id": "two-drinks",
+      "label": "两人各有一杯饮料",
+      "relaxable": true
+    },
+    {
+      "id": "shared-side",
+      "label": "有一份共享小食",
+      "relaxable": true
+    }
+  ],
+  "candidates": [
+    {
+      "id": "A",
+      "label": "保留全部需求",
+      "allocation": "甲：演示主食 A；乙：演示主食 B；配餐见条件检查（虚构数据）",
+      "context": {
+        "store_id": "DEMO-STORE",
+        "dining_mode": "takeaway",
+        "currency": "CNY"
+      },
+      "quote": {
+        "total_cents": 4600,
+        "source": "calculate-price",
+        "observed_at": "2026-10-24T20:00:00+08:00",
+        "evidence": "DEMO-FIXTURE: 非真实 MCP 响应"
+      },
+      "checks": {
+        "p1-main": {
+          "status": "pass",
+          "evidence": "虚构演示条件检查，不代表麦当劳真实餐品"
+        },
+        "p2-main": {
+          "status": "pass",
+          "evidence": "虚构演示条件检查，不代表麦当劳真实餐品"
+        },
+        "two-drinks": {
+          "status": "pass",
+          "evidence": "虚构演示条件检查，不代表麦当劳真实餐品"
+        },
+        "shared-side": {
+          "status": "pass",
+          "evidence": "虚构演示条件检查，不代表麦当劳真实餐品"
+        }
+      }
+    },
+    {
+      "id": "B",
+      "label": "去掉共享小食",
+      "allocation": "甲：演示主食 A；乙：演示主食 B；配餐见条件检查（虚构数据）",
+      "context": {
+        "store_id": "DEMO-STORE",
+        "dining_mode": "takeaway",
+        "currency": "CNY"
+      },
+      "quote": {
+        "total_cents": 3900,
+        "source": "calculate-price",
+        "observed_at": "2026-10-24T20:00:00+08:00",
+        "evidence": "DEMO-FIXTURE: 非真实 MCP 响应"
+      },
+      "checks": {
+        "p1-main": {
+          "status": "pass",
+          "evidence": "虚构演示条件检查，不代表麦当劳真实餐品"
+        },
+        "p2-main": {
+          "status": "pass",
+          "evidence": "虚构演示条件检查，不代表麦当劳真实餐品"
+        },
+        "two-drinks": {
+          "status": "pass",
+          "evidence": "虚构演示条件检查，不代表麦当劳真实餐品"
+        },
+        "shared-side": {
+          "status": "fail",
+          "evidence": "虚构演示条件检查，不代表麦当劳真实餐品"
+        }
+      }
+    },
+    {
+      "id": "C",
+      "label": "不配两杯饮料",
+      "allocation": "甲：演示主食 A；乙：演示主食 B；配餐见条件检查（虚构数据）",
+      "context": {
+        "store_id": "DEMO-STORE",
+        "dining_mode": "takeaway",
+        "currency": "CNY"
+      },
+      "quote": {
+        "total_cents": 4100,
+        "source": "calculate-price",
+        "observed_at": "2026-10-24T20:00:00+08:00",
+        "evidence": "DEMO-FIXTURE: 非真实 MCP 响应"
+      },
+      "checks": {
+        "p1-main": {
+          "status": "pass",
+          "evidence": "虚构演示条件检查，不代表麦当劳真实餐品"
+        },
+        "p2-main": {
+          "status": "pass",
+          "evidence": "虚构演示条件检查，不代表麦当劳真实餐品"
+        },
+        "two-drinks": {
+          "status": "fail",
+          "evidence": "虚构演示条件检查，不代表麦当劳真实餐品"
+        },
+        "shared-side": {
+          "status": "pass",
+          "evidence": "虚构演示条件检查，不代表麦当劳真实餐品"
+        }
+      }
+    },
+    {
+      "id": "D",
+      "label": "去掉饮料及小食",
+      "allocation": "甲：演示主食 A；乙：演示主食 B；配餐见条件检查（虚构数据）",
+      "context": {
+        "store_id": "DEMO-STORE",
+        "dining_mode": "takeaway",
+        "currency": "CNY"
+      },
+      "quote": {
+        "total_cents": 3600,
+        "source": "calculate-price",
+        "observed_at": "2026-10-24T20:00:00+08:00",
+        "evidence": "DEMO-FIXTURE: 非真实 MCP 响应"
+      },
+      "checks": {
+        "p1-main": {
+          "status": "pass",
+          "evidence": "虚构演示条件检查，不代表麦当劳真实餐品"
+        },
+        "p2-main": {
+          "status": "pass",
+          "evidence": "虚构演示条件检查，不代表麦当劳真实餐品"
+        },
+        "two-drinks": {
+          "status": "fail",
+          "evidence": "虚构演示条件检查，不代表麦当劳真实餐品"
+        },
+        "shared-side": {
+          "status": "fail",
+          "evidence": "虚构演示条件检查，不代表麦当劳真实餐品"
+        }
+      }
+    },
+    {
+      "id": "E",
+      "label": "套餐组成待核实",
+      "allocation": "甲：演示主食 A；乙：演示主食 B；配餐见条件检查（虚构数据）",
+      "context": {
+        "store_id": "DEMO-STORE",
+        "dining_mode": "takeaway",
+        "currency": "CNY"
+      },
+      "quote": {
+        "total_cents": 3800,
+        "source": "calculate-price",
+        "observed_at": "2026-10-24T20:00:00+08:00",
+        "evidence": "DEMO-FIXTURE: 非真实 MCP 响应"
+      },
+      "checks": {
+        "p1-main": {
+          "status": "pass",
+          "evidence": "虚构演示条件检查，不代表麦当劳真实餐品"
+        },
+        "p2-main": {
+          "status": "unknown",
+          "evidence": "虚构演示条件检查，不代表麦当劳真实餐品"
+        },
+        "two-drinks": {
+          "status": "pass",
+          "evidence": "虚构演示条件检查，不代表麦当劳真实餐品"
+        },
+        "shared-side": {
+          "status": "pass",
+          "evidence": "虚构演示条件检查，不代表麦当劳真实餐品"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "schema_version": 1,
+  "mode": "demo",
+  "context": {
+    "store_id": "1450713",
+    "dining_mode": "pickup",
+    "currency": "CNY",
+    "reservation_time": "2026-10-25T12:00:00+08:00"
+  },
+  "budget_cents": 4000,
+  "constraints": [
+    {
+      "id": "p1-main",
+      "label": "甲有一份汉堡主食",
+      "relaxable": false
+    },
+    {
+      "id": "p2-main",
+      "label": "乙有一份汉堡主食",
+      "relaxable": false
+    },
+    {
+      "id": "two-drinks",
+      "label": "两人各有一杯饮料",
+      "relaxable": true
+    },
+    {
+      "id": "shared-side",
+      "label": "有一份共享薯条",
+      "relaxable": true
+    }
+  ],
+  "candidates": [
+    {
+      "id": "A",
+      "label": "各一份随心配，加共享中薯条",
+      "allocation": "甲：双层吉士汉堡、可乐麦炫酷；乙：双层吉士汉堡、可乐麦炫酷；共享：中薯条一份",
+      "context": {
+        "store_id": "1450713",
+        "dining_mode": "pickup",
+        "currency": "CNY",
+        "reservation_time": "2026-10-25T12:00:00+08:00"
+      },
+      "quote": {
+        "total_cents": 4330,
+        "source": "calculate-price",
+        "observed_at": "2026-10-25T09:14:54+08:00",
+        "evidence": "真实 calculate-price 响应 SHA256:651096a7bda8639f576442895783313c58ca5794f08298191223404b82aa484f"
+      },
+      "checks": {
+        "p1-main": {
+          "status": "pass",
+          "evidence": "甲：双层吉士汉堡、可乐麦炫酷；乙：双层吉士汉堡、可乐麦炫酷；共享：中薯条一份；依据 query-meal-detail 套餐默认组成与本次完整购物车参数逐项核对。"
+        },
+        "p2-main": {
+          "status": "pass",
+          "evidence": "甲：双层吉士汉堡、可乐麦炫酷；乙：双层吉士汉堡、可乐麦炫酷；共享：中薯条一份；依据 query-meal-detail 套餐默认组成与本次完整购物车参数逐项核对。"
+        },
+        "two-drinks": {
+          "status": "pass",
+          "evidence": "甲：双层吉士汉堡、可乐麦炫酷；乙：双层吉士汉堡、可乐麦炫酷；共享：中薯条一份；依据 query-meal-detail 套餐默认组成与本次完整购物车参数逐项核对。"
+        },
+        "shared-side": {
+          "status": "pass",
+          "evidence": "甲：双层吉士汉堡、可乐麦炫酷；乙：双层吉士汉堡、可乐麦炫酷；共享：中薯条一份；依据 query-meal-detail 套餐默认组成与本次完整购物车参数逐项核对。"
+        }
+      }
+    },
+    {
+      "id": "B",
+      "label": "各一份随心配",
+      "allocation": "甲：双层吉士汉堡、可乐麦炫酷；乙：双层吉士汉堡、可乐麦炫酷",
+      "context": {
+        "store_id": "1450713",
+        "dining_mode": "pickup",
+        "currency": "CNY",
+        "reservation_time": "2026-10-25T12:00:00+08:00"
+      },
+      "quote": {
+        "total_cents": 2980,
+        "source": "calculate-price",
+        "observed_at": "2026-10-25T09:14:54+08:00",
+        "evidence": "真实 calculate-price 响应 SHA256:56dd023dd726e205a2d0c7541aa17cc79d74112faf50ae9ecfb4a54f0756b00c"
+      },
+      "checks": {
+        "p1-main": {
+          "status": "pass",
+          "evidence": "甲：双层吉士汉堡、可乐麦炫酷；乙：双层吉士汉堡、可乐麦炫酷；依据 query-meal-detail 套餐默认组成与本次完整购物车参数逐项核对。"
+        },
+        "p2-main": {
+          "status": "pass",
+          "evidence": "甲：双层吉士汉堡、可乐麦炫酷；乙：双层吉士汉堡、可乐麦炫酷；依据 query-meal-detail 套餐默认组成与本次完整购物车参数逐项核对。"
+        },
+        "two-drinks": {
+          "status": "pass",
+          "evidence": "甲：双层吉士汉堡、可乐麦炫酷；乙：双层吉士汉堡、可乐麦炫酷；依据 query-meal-detail 套餐默认组成与本次完整购物车参数逐项核对。"
+        },
+        "shared-side": {
+          "status": "fail",
+          "evidence": "甲：双层吉士汉堡、可乐麦炫酷；乙：双层吉士汉堡、可乐麦炫酷；依据 query-meal-detail 套餐默认组成与本次完整购物车参数逐项核对。"
+        }
+      }
+    },
+    {
+      "id": "C",
+      "label": "各一份麦香鸡，加共享中薯条",
+      "allocation": "甲：麦香鸡；乙：麦香鸡；共享：中薯条一份",
+      "context": {
+        "store_id": "1450713",
+        "dining_mode": "pickup",
+        "currency": "CNY",
+        "reservation_time": "2026-10-25T12:00:00+08:00"
+      },
+      "quote": {
+        "total_cents": 4750,
+        "source": "calculate-price",
+        "observed_at": "2026-10-25T09:14:53+08:00",
+        "evidence": "真实 calculate-price 响应 SHA256:20cb9f6d43f7f80e784e870292d26796ed38bc9a73baf39bf98c83104b72f057"
+      },
+      "checks": {
+        "p1-main": {
+          "status": "pass",
+          "evidence": "甲：麦香鸡；乙：麦香鸡；共享：中薯条一份；依据 query-meal-detail 套餐默认组成与本次完整购物车参数逐项核对。"
+        },
+        "p2-main": {
+          "status": "pass",
+          "evidence": "甲：麦香鸡；乙：麦香鸡；共享：中薯条一份；依据 query-meal-detail 套餐默认组成与本次完整购物车参数逐项核对。"
+        },
+        "two-drinks": {
+          "status": "fail",
+          "evidence": "甲：麦香鸡；乙：麦香鸡；共享：中薯条一份；依据 query-meal-detail 套餐默认组成与本次完整购物车参数逐项核对。"
+        },
+        "shared-side": {
+          "status": "pass",
+          "evidence": "甲：麦香鸡；乙：麦香鸡；共享：中薯条一份；依据 query-meal-detail 套餐默认组成与本次完整购物车参数逐项核对。"
+        }
+      }
+    },
+    {
+      "id": "D",
+      "label": "各一份麦香鸡",
+      "allocation": "甲：麦香鸡；乙：麦香鸡",
+      "context": {
+        "store_id": "1450713",
+        "dining_mode": "pickup",
+        "currency": "CNY",
+        "reservation_time": "2026-10-25T12:00:00+08:00"
+      },
+      "quote": {
+        "total_cents": 3400,
+        "source": "calculate-price",
+        "observed_at": "2026-10-25T09:14:53+08:00",
+        "evidence": "真实 calculate-price 响应 SHA256:9f8c743ed9629de6bc4c910b6020537e6319f7c8a16a4d9aacffda1298a3d42c"
+      },
+      "checks": {
+        "p1-main": {
+          "status": "pass",
+          "evidence": "甲：麦香鸡；乙：麦香鸡；依据 query-meal-detail 套餐默认组成与本次完整购物车参数逐项核对。"
+        },
+        "p2-main": {
+          "status": "pass",
+          "evidence": "甲：麦香鸡；乙：麦香鸡；依据 query-meal-detail 套餐默认组成与本次完整购物车参数逐项核对。"
+        },
+        "two-drinks": {
+          "status": "fail",
+          "evidence": "甲：麦香鸡；乙：麦香鸡；依据 query-meal-detail 套餐默认组成与本次完整购物车参数逐项核对。"
+        },
+        "shared-side": {
+          "status": "fail",
+          "evidence": "甲：麦香鸡；乙：麦香鸡；依据 query-meal-detail 套餐默认组成与本次完整购物车参数逐项核对。"
+        }
+      }
+    }
+  ],
+  "demo_now": "2026-10-25T09:15:34.676425+08:00",
+  "capture_source": "真实 MCP 响应的脱敏历史快照；使用 demo 模式固定时间回放，不代表当前价格"
+}
